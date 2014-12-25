@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 			function innerAnimateOne (itirator) {
 
-				var index = j > 4 ? j - 5 : j;
-				var heightOrWidth = index === 3 ? "width" : "height";
+				var index = j > 4 ? j - 5 : j; //the loop goes back to 0 once it gets to 5
+				var heightOrWidth = index === 3 ? "width" : "height"; //only the third line is horizontal
 
 				setTimeout(function() {		
 					$(lines[index]).css(heightOrWidth, "0%");
@@ -20,7 +20,7 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
-				$("#flag").css("background-color", "red");
+				$("#flag").css("background-color", "#df2121");
 			}, 2500);
 	
 		}
